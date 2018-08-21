@@ -7,4 +7,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DomainRepository extends CrudRepository<Domain, Long> {
+
+    Domain findByDomainName(String domainName);
+
+
 }

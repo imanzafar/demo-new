@@ -9,6 +9,9 @@ import javax.persistence.*;
 public class Domain {
 
 
+    public Domain() {
+    }
+
     @Id
     @Column(name = "DOMAIN_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,6 +24,7 @@ public class Domain {
         this.id = id;
         this.domainName = domainName;
     }
+
 
     public long getId() {
         return id;
